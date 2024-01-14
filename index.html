@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Conversor de Moedas</title>
+</head>
+<body>
+    <div class="converter">
+        <h1>Conversor de Moedas</h1>
+        <label for="amount">Quantidade:</label>
+        <input type="number" id="amount" placeholder="Digite o valor" step="0.01">
+
+        <label for="from">De:</label>
+        <select id="from">
+            <option value="usd">Dólar Americano (USD)</option>
+            <option value="eur">Euro (EUR)</option>
+            <option value="gbp">Libra Esterlina (GBP)</option>
+            <option value="jpy">Iene Japonês (JPY)</option>
+            <option value="aud">Dólar Australiano (AUD)</option>
+            <option value="brl">Real Brasileiro (BRL)</option>
+            <!-- Adicione mais opÃ§Ãµes conforme necessÃ¡rio -->
+        </select>
+
+        <label for="to">Para:</label>
+        <select id="to">
+            <option value="usd">Dólar Americano (USD)</option>
+            <option value="eur">Euro (EUR)</option>
+            <option value="gbp">Libra Esterlina (GBP)</option>
+            <option value="jpy">Iene Japonês (JPY)</option>
+            <option value="aud">Dólar Australiano (AUD)</option>
+            <option value="brl">Real Brasileiro (BRL)</option>
+            <!-- Adicione mais opÃ§Ãµes conforme necessÃ¡rio -->
+        </select>
+
+        <button onclick="converterMoeda()">Converter</button>
+
+        <h2>Resultado:</h2>
+        <div id="resultado"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
